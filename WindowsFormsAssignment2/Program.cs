@@ -1,7 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿/**
+App: COMP1004-Assignment2
+Author: Nicholas Oshukany
+Last Modified: 02/12/2017
+Description: 
+*/
+
+using System;
 using System.Windows.Forms;
 
 namespace WindowsFormsAssignment2
