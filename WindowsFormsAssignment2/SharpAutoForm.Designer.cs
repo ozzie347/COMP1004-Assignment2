@@ -215,8 +215,9 @@
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(108, 26);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.exitToolStripMenuItem.Text = "Ex̲it";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitButton_Click);
             // 
             // editToolStripMenuItem
             // 
@@ -232,14 +233,16 @@
             // calculateToolStripMenuItem
             // 
             this.calculateToolStripMenuItem.Name = "calculateToolStripMenuItem";
-            this.calculateToolStripMenuItem.Size = new System.Drawing.Size(145, 26);
+            this.calculateToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.calculateToolStripMenuItem.Text = "C̲alculate";
+            this.calculateToolStripMenuItem.Click += new System.EventHandler(this.calculateButton_Click);
             // 
             // clearToolStripMenuItem
             // 
             this.clearToolStripMenuItem.Name = "clearToolStripMenuItem";
-            this.clearToolStripMenuItem.Size = new System.Drawing.Size(145, 26);
+            this.clearToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.clearToolStripMenuItem.Text = "Cl̲ear";
+            this.clearToolStripMenuItem.Click += new System.EventHandler(this.clearButton_Click);
             // 
             // fontToolStripMenuItem
             // 
@@ -266,6 +269,7 @@
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
             this.aboutToolStripMenuItem.Size = new System.Drawing.Size(125, 26);
             this.aboutToolStripMenuItem.Text = "A̲bout";
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
             // basePriceTextBox
             // 
@@ -273,6 +277,7 @@
             this.basePriceTextBox.Name = "basePriceTextBox";
             this.basePriceTextBox.Size = new System.Drawing.Size(100, 22);
             this.basePriceTextBox.TabIndex = 7;
+            this.basePriceTextBox.Leave += new System.EventHandler(this.basePriceTextBox_Leave);
             // 
             // additionalOptionsTextBox
             // 
@@ -313,6 +318,7 @@
             this.tradeInAllowanceTextBox.Size = new System.Drawing.Size(100, 22);
             this.tradeInAllowanceTextBox.TabIndex = 12;
             this.tradeInAllowanceTextBox.Text = "0";
+            this.tradeInAllowanceTextBox.TextChanged += new System.EventHandler(this.tradeInAllowanceTextBox_TextChanged);
             // 
             // amountDueTextBox
             // 
