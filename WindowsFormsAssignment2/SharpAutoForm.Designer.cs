@@ -135,6 +135,7 @@
             this.customizedDetailingRadioButton.TabStop = true;
             this.customizedDetailingRadioButton.Text = "Customized Detailing";
             this.customizedDetailingRadioButton.UseVisualStyleBackColor = true;
+            this.customizedDetailingRadioButton.CheckedChanged += new System.EventHandler(this.customizedDetailingRadioButton_CheckedChanged);
             // 
             // pearlizedRadioButton
             // 
@@ -146,6 +147,7 @@
             this.pearlizedRadioButton.TabStop = true;
             this.pearlizedRadioButton.Text = "Pearlized";
             this.pearlizedRadioButton.UseVisualStyleBackColor = true;
+            this.pearlizedRadioButton.CheckedChanged += new System.EventHandler(this.pearlizedRadioButton_CheckedChanged);
             // 
             // standardRadioButton
             // 
@@ -167,6 +169,7 @@
             this.calculateButton.TabIndex = 2;
             this.calculateButton.Text = "Calculate";
             this.calculateButton.UseVisualStyleBackColor = true;
+            this.calculateButton.Click += new System.EventHandler(this.calculateButton_Click);
             // 
             // clearButton
             // 
@@ -176,6 +179,7 @@
             this.clearButton.TabIndex = 3;
             this.clearButton.Text = "Clear";
             this.clearButton.UseVisualStyleBackColor = true;
+            this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
             // 
             // exitButton
             // 
@@ -382,8 +386,7 @@
             // 
             // AutoCenterForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(482, 453);
             this.Controls.Add(this.amountDueLabel);
             this.Controls.Add(this.tradeInAllowanceLabel);
