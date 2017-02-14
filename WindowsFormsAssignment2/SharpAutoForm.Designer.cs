@@ -46,7 +46,13 @@
             this.calculateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clearToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fontToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.microsoftSansSerifToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.timesNewRomanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.comicSansToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.colourToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.whiteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.greenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.redToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.basePriceTextBox = new System.Windows.Forms.TextBox();
@@ -215,7 +221,7 @@
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(108, 26);
             this.exitToolStripMenuItem.Text = "Ex̲it";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitButton_Click);
             // 
@@ -246,15 +252,65 @@
             // 
             // fontToolStripMenuItem
             // 
+            this.fontToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.microsoftSansSerifToolStripMenuItem,
+            this.timesNewRomanToolStripMenuItem,
+            this.comicSansToolStripMenuItem});
             this.fontToolStripMenuItem.Name = "fontToolStripMenuItem";
-            this.fontToolStripMenuItem.Size = new System.Drawing.Size(145, 26);
+            this.fontToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.fontToolStripMenuItem.Text = "F̲ont";
+            // 
+            // microsoftSansSerifToolStripMenuItem
+            // 
+            this.microsoftSansSerifToolStripMenuItem.Name = "microsoftSansSerifToolStripMenuItem";
+            this.microsoftSansSerifToolStripMenuItem.Size = new System.Drawing.Size(215, 26);
+            this.microsoftSansSerifToolStripMenuItem.Text = "Microsoft Sans Serif";
+            this.microsoftSansSerifToolStripMenuItem.Click += new System.EventHandler(this.microsoftSansSerifToolStripMenuItem_Click);
+            // 
+            // timesNewRomanToolStripMenuItem
+            // 
+            this.timesNewRomanToolStripMenuItem.Name = "timesNewRomanToolStripMenuItem";
+            this.timesNewRomanToolStripMenuItem.Size = new System.Drawing.Size(215, 26);
+            this.timesNewRomanToolStripMenuItem.Text = "Times New Roman";
+            this.timesNewRomanToolStripMenuItem.Click += new System.EventHandler(this.timesNewRomanToolStripMenuItem_Click);
+            // 
+            // comicSansToolStripMenuItem
+            // 
+            this.comicSansToolStripMenuItem.Name = "comicSansToolStripMenuItem";
+            this.comicSansToolStripMenuItem.Size = new System.Drawing.Size(215, 26);
+            this.comicSansToolStripMenuItem.Text = "Comic Sans";
+            this.comicSansToolStripMenuItem.Click += new System.EventHandler(this.comicSansToolStripMenuItem_Click);
             // 
             // colourToolStripMenuItem
             // 
+            this.colourToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.whiteToolStripMenuItem,
+            this.greenToolStripMenuItem,
+            this.redToolStripMenuItem});
             this.colourToolStripMenuItem.Name = "colourToolStripMenuItem";
-            this.colourToolStripMenuItem.Size = new System.Drawing.Size(145, 26);
+            this.colourToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.colourToolStripMenuItem.Text = "Co̲lour";
+            // 
+            // whiteToolStripMenuItem
+            // 
+            this.whiteToolStripMenuItem.Name = "whiteToolStripMenuItem";
+            this.whiteToolStripMenuItem.Size = new System.Drawing.Size(123, 26);
+            this.whiteToolStripMenuItem.Text = "White";
+            this.whiteToolStripMenuItem.Click += new System.EventHandler(this.whiteToolStripMenuItem_Click);
+            // 
+            // greenToolStripMenuItem
+            // 
+            this.greenToolStripMenuItem.Name = "greenToolStripMenuItem";
+            this.greenToolStripMenuItem.Size = new System.Drawing.Size(123, 26);
+            this.greenToolStripMenuItem.Text = "Green";
+            this.greenToolStripMenuItem.Click += new System.EventHandler(this.greenToolStripMenuItem_Click);
+            // 
+            // redToolStripMenuItem
+            // 
+            this.redToolStripMenuItem.Name = "redToolStripMenuItem";
+            this.redToolStripMenuItem.Size = new System.Drawing.Size(123, 26);
+            this.redToolStripMenuItem.Text = "Red";
+            this.redToolStripMenuItem.Click += new System.EventHandler(this.redToolStripMenuItem_Click);
             // 
             // helpToolStripMenuItem
             // 
@@ -318,7 +374,7 @@
             this.tradeInAllowanceTextBox.Size = new System.Drawing.Size(100, 22);
             this.tradeInAllowanceTextBox.TabIndex = 12;
             this.tradeInAllowanceTextBox.Text = "0";
-            this.tradeInAllowanceTextBox.TextChanged += new System.EventHandler(this.tradeInAllowanceTextBox_TextChanged);
+            this.tradeInAllowanceTextBox.Leave += new System.EventHandler(this.tradeInAllowanceTextBox_Leave);
             // 
             // amountDueTextBox
             // 
@@ -466,6 +522,12 @@
         private System.Windows.Forms.Label totalLabel;
         private System.Windows.Forms.Label tradeInAllowanceLabel;
         private System.Windows.Forms.Label amountDueLabel;
+        private System.Windows.Forms.ToolStripMenuItem redToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem greenToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem whiteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem microsoftSansSerifToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem timesNewRomanToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem comicSansToolStripMenuItem;
     }
 }
 
