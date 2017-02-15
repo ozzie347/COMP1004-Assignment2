@@ -239,14 +239,14 @@
             // calculateToolStripMenuItem
             // 
             this.calculateToolStripMenuItem.Name = "calculateToolStripMenuItem";
-            this.calculateToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.calculateToolStripMenuItem.Size = new System.Drawing.Size(145, 26);
             this.calculateToolStripMenuItem.Text = "C̲alculate";
             this.calculateToolStripMenuItem.Click += new System.EventHandler(this.calculateButton_Click);
             // 
             // clearToolStripMenuItem
             // 
             this.clearToolStripMenuItem.Name = "clearToolStripMenuItem";
-            this.clearToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.clearToolStripMenuItem.Size = new System.Drawing.Size(145, 26);
             this.clearToolStripMenuItem.Text = "Cl̲ear";
             this.clearToolStripMenuItem.Click += new System.EventHandler(this.clearButton_Click);
             // 
@@ -257,7 +257,7 @@
             this.timesNewRomanToolStripMenuItem,
             this.comicSansToolStripMenuItem});
             this.fontToolStripMenuItem.Name = "fontToolStripMenuItem";
-            this.fontToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.fontToolStripMenuItem.Size = new System.Drawing.Size(145, 26);
             this.fontToolStripMenuItem.Text = "F̲ont";
             // 
             // microsoftSansSerifToolStripMenuItem
@@ -288,7 +288,7 @@
             this.greenToolStripMenuItem,
             this.redToolStripMenuItem});
             this.colourToolStripMenuItem.Name = "colourToolStripMenuItem";
-            this.colourToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.colourToolStripMenuItem.Size = new System.Drawing.Size(145, 26);
             this.colourToolStripMenuItem.Text = "Co̲lour";
             // 
             // whiteToolStripMenuItem
@@ -473,6 +473,7 @@
             this.Controls.Add(this.menuStrip);
             this.MainMenuStrip = this.menuStrip;
             this.Name = "AutoCenterForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Auto Center";
             this.additionalItemsGroupBox.ResumeLayout(false);
             this.additionalItemsGroupBox.PerformLayout();

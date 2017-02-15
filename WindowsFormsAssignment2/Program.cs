@@ -2,7 +2,7 @@
 App: COMP1004-Assignment2
 Author: Nicholas Oshukany
 Last Modified: 02/12/2017
-Description: 
+Description: This program calculates the amount due on a new or used vehicle
 */
 
 using System;
